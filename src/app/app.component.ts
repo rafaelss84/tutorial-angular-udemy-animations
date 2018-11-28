@@ -118,11 +118,19 @@ export class AppComponent {
     this.wildState = 'shrunken';
   }
 
-    onAdd(item) {
-      this.list.push(item);
-    }
+  onAdd(item) {
+    this.list.push(item);
+  }
 
-    onDelete(item) {
-      this.list.splice(this.list.indexOf(item), 1);
-    }
+  onDelete(item) {
+    this.list.splice(this.list.indexOf(item), 1);
+  }
+
+  animationStarted(event) {
+    console.log(event);
+  }
+
+  animationEnded(event) {
+    console.log(event);
+  }
 }
